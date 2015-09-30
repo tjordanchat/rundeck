@@ -20,5 +20,5 @@ ENV PATH $PATH:$GRADLE_HOME/bin
 # (ie. Mount project at /app "docker --rm -v /path/to/app:/app gradle <command>")
 RUN mkdir /app
 WORKDIR /app
-ENTRYPOINT ["gradle"] 
+ENTRYPOINT ["/usr/bin/gradle"] 
 CMD ["-version", "-clean", "-war"]
