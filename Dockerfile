@@ -24,5 +24,5 @@ VOLUME /root/.gradle/caches
 # (ie. Mount project at /usr/bin/app "docker --rm -v /path/to/app:/usr/bin/app gradle <command>")
 VOLUME /usr/bin/app
 WORKDIR /usr/bin/app
-ENTRYPOINT gradle
-CMD -version
+#ENTRYPOINT gradle
+#CMD -version
