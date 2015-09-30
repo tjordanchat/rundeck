@@ -18,7 +18,3 @@ ENV PATH $PATH:$GRADLE_HOME/bin
 
 # Default command is "/usr/bin/gradle -version" on /app dir
 # (ie. Mount project at /app "docker --rm -v /path/to/app:/app gradle <command>")
-RUN mkdir /app
-WORKDIR /app
-ENTRYPOINT ["/usr/bin/gradle"] 
-CMD ["-version", "-clean", "-war"]
